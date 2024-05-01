@@ -8,7 +8,8 @@
 import SwiftUI
 
 /// 画像をリサイズして表示(clip)
-struct ContentView_002: View {
+struct ContentView_002: View, ViewWithTitle {
+    var title: String = "002: 画像をリサイズして表示(clip)"
     var body: some View {
         Image("cat002")
             .resizable()
@@ -16,6 +17,9 @@ struct ContentView_002: View {
             .frame(width: 150, height: 200)
             .clipped()
             .background(.red) // ※画像の余白の赤部分が出ない事の確認のため
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+
     }
 }
 
