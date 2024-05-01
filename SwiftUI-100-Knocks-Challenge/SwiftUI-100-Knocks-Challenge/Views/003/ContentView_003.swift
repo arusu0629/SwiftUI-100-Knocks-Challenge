@@ -8,8 +8,8 @@
 import SwiftUI
 
 /// 画像を丸く切り取る
-struct ContentView_003: View, ViewWithTitle {
-    var title: String = "003: 画像を丸く切り取る"
+struct ContentView_003: ViewWithTitle {
+    let title: String = "003: 画像を丸く切り取る"
     var body: some View {
         Image("cat003")
             .resizable()
@@ -21,5 +21,7 @@ struct ContentView_003: View, ViewWithTitle {
 }
 
 #Preview {
-    ContentView_003()
+    NavigationView {
+        ContentView_003()
+    }
 }

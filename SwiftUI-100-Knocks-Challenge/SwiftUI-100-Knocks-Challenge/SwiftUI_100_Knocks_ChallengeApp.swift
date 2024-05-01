@@ -12,7 +12,7 @@ struct SwiftUI_100_Knocks_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                List(ViewData.testViewData, id: \.title) { data in
+                List(ContentViewData.testViewData, id: \.title) { data in
                     NavigationLink(destination: data.view) {
                         Text("\(data.title)")
                     }
@@ -23,28 +23,22 @@ struct SwiftUI_100_Knocks_ChallengeApp: App {
     }
 }
 
-struct ViewData {
+struct ContentViewData {
     let title: String
     let view: AnyView
 
-    init(view: some View) {
-        if let viewWithTitle = view as? ViewWithTitle {
-            self.title = viewWithTitle.title
-            self.view = AnyView(view)
-        } else {
-            self.title = "Unknown View Title"
-            self.view = AnyView(view)
-
-        }
+    init<V: ViewWithTitle>(_ view: V) {
+        self.title = view.title
+        self.view = AnyView(view)
     }
 }
 
 /// FIXME: フォルダから動的に取得したい
 /// とりあえず手動で追加
-extension ViewData {
-    static let testViewData: [ViewData] = [
-        ViewData(view: ContentView_001()),
-        ViewData(view: ContentView_002()),
-        ViewData(view: ContentView_003()),
+extension ContentViewData {
+    static let testViewData: [ContentViewData] = [
+        ContentViewData(ContentView_001()),
+        ContentViewData(ContentView_002()),
+        ContentViewData(ContentView_003()),
     ]
 }

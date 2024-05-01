@@ -8,8 +8,8 @@
 import SwiftUI
 
 /// 画像をリサイズして表示(clip)
-struct ContentView_002: View, ViewWithTitle {
-    var title: String = "002: 画像をリサイズして表示(clip)"
+struct ContentView_002: ViewWithTitle {
+    let title: String = "002: 画像をリサイズして表示(clip)"
     var body: some View {
         Image("cat002")
             .resizable()
@@ -24,5 +24,7 @@ struct ContentView_002: View, ViewWithTitle {
 }
 
 #Preview {
-    ContentView_002()
+    NavigationView {
+        ContentView_002()
+    }
 }

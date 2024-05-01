@@ -5,6 +5,8 @@
 //  Created by af_nakandakari_toru on 2024/05/01.
 //
 
-protocol ViewWithTitle {
+import SwiftUI
+
+protocol ViewWithTitle: View {
     var title: String { get }
 }
