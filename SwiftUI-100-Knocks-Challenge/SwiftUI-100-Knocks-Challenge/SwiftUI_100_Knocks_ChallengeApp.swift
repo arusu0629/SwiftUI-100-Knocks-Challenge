@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_100_Knocks_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView_001()
         }
     }
 }

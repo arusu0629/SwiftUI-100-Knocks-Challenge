@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		2FE0D4522BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */; };
-		2FE0D4542BE1F7FB000AC1A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4532BE1F7FB000AC1A0 /* ContentView.swift */; };
 		2FE0D4562BE1F7FC000AC1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE0D4552BE1F7FC000AC1A0 /* Assets.xcassets */; };
 		2FE0D4592BE1F7FC000AC1A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE0D4582BE1F7FC000AC1A0 /* Preview Assets.xcassets */; };
+		2FE0D4622BE1F878000AC1A0 /* ContentView_001.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4612BE1F878000AC1A0 /* ContentView_001.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FE0D44E2BE1F7FB000AC1A0 /* SwiftUI-100-Knocks-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-100-Knocks-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_100_Knocks_ChallengeApp.swift; sourceTree = "<group>"; };
-		2FE0D4532BE1F7FB000AC1A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2FE0D4552BE1F7FC000AC1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE0D4582BE1F7FC000AC1A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2FE0D4612BE1F878000AC1A0 /* ContentView_001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_001.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,8 @@
 		2FE0D4502BE1F7FB000AC1A0 /* SwiftUI-100-Knocks-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				2FE0D45F2BE1F864000AC1A0 /* Views */,
 				2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */,
-				2FE0D4532BE1F7FB000AC1A0 /* ContentView.swift */,
 				2FE0D4552BE1F7FC000AC1A0 /* Assets.xcassets */,
 				2FE0D4572BE1F7FC000AC1A0 /* Preview Content */,
 			);
@@ -65,6 +65,22 @@
 				2FE0D4582BE1F7FC000AC1A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2FE0D45F2BE1F864000AC1A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FE0D4602BE1F870000AC1A0 /* 001 */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2FE0D4602BE1F870000AC1A0 /* 001 */ = {
+			isa = PBXGroup;
+			children = (
+				2FE0D4612BE1F878000AC1A0 /* ContentView_001.swift */,
+			);
+			path = 001;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FE0D4542BE1F7FB000AC1A0 /* ContentView.swift in Sources */,
+				2FE0D4622BE1F878000AC1A0 /* ContentView_001.swift in Sources */,
 				2FE0D4522BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
