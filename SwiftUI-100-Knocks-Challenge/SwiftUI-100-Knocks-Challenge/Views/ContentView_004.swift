@@ -26,3 +26,15 @@ struct ContentView_004: ViewWithTitle {
         ContentView_004()
     }
 }
+
+/*
+ 別解
+ Image("cat004")
+     .resizable()
+     .scaledToFill()
+     .frame(width: 150, height: 150)
+     .cornerRadius(75)
+     .overlay(
+         RoundedRectangle(cornerRadius: 75).stroke(Color.black, lineWidth: 4)
+     )
+*/
