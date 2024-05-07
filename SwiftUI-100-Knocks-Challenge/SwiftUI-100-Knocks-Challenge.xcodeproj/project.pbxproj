@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FBFAA802BE9B6A200299F05 /* ContentView_008.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFAA7F2BE9B6A200299F05 /* ContentView_008.swift */; };
 		2FE0D4522BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */; };
 		2FE0D4562BE1F7FC000AC1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE0D4552BE1F7FC000AC1A0 /* Assets.xcassets */; };
 		2FE0D4592BE1F7FC000AC1A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE0D4582BE1F7FC000AC1A0 /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FBFAA7F2BE9B6A200299F05 /* ContentView_008.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_008.swift; sourceTree = "<group>"; };
 		2FE0D44E2BE1F7FB000AC1A0 /* SwiftUI-100-Knocks-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-100-Knocks-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_100_Knocks_ChallengeApp.swift; sourceTree = "<group>"; };
 		2FE0D4552BE1F7FC000AC1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				2FE0D4792BE32E4A000AC1A0 /* ContentView_005.swift */,
 				2FE0D47B2BE3300E000AC1A0 /* ContentView_006.swift */,
 				2FE0D47D2BE9AFE9000AC1A0 /* ContentView_007.swift */,
+				2FBFAA7F2BE9B6A200299F05 /* ContentView_008.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FE0D46A2BE21FDF000AC1A0 /* ContentView_003.swift in Sources */,
+				2FBFAA802BE9B6A200299F05 /* ContentView_008.swift in Sources */,
 				2FE0D4622BE1F878000AC1A0 /* ContentView_001.swift in Sources */,
 				2FE0D4672BE21EBE000AC1A0 /* ContentView_002.swift in Sources */,
 				2FE0D47C2BE3300E000AC1A0 /* ContentView_006.swift in Sources */,
