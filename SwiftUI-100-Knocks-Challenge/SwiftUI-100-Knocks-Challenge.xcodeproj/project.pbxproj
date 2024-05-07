@@ -17,6 +17,7 @@
 		2FE0D4782BE32B23000AC1A0 /* ContentView_004.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4772BE32B23000AC1A0 /* ContentView_004.swift */; };
 		2FE0D47A2BE32E4A000AC1A0 /* ContentView_005.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4792BE32E4A000AC1A0 /* ContentView_005.swift */; };
 		2FE0D47C2BE3300E000AC1A0 /* ContentView_006.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D47B2BE3300E000AC1A0 /* ContentView_006.swift */; };
+		2FE0D47E2BE9AFE9000AC1A0 /* ContentView_007.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D47D2BE9AFE9000AC1A0 /* ContentView_007.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2FE0D4772BE32B23000AC1A0 /* ContentView_004.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView_004.swift; sourceTree = "<group>"; };
 		2FE0D4792BE32E4A000AC1A0 /* ContentView_005.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_005.swift; sourceTree = "<group>"; };
 		2FE0D47B2BE3300E000AC1A0 /* ContentView_006.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_006.swift; sourceTree = "<group>"; };
+		2FE0D47D2BE9AFE9000AC1A0 /* ContentView_007.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_007.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				2FE0D4772BE32B23000AC1A0 /* ContentView_004.swift */,
 				2FE0D4792BE32E4A000AC1A0 /* ContentView_005.swift */,
 				2FE0D47B2BE3300E000AC1A0 /* ContentView_006.swift */,
+				2FE0D47D2BE9AFE9000AC1A0 /* ContentView_007.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				2FE0D4782BE32B23000AC1A0 /* ContentView_004.swift in Sources */,
 				2FE0D47A2BE32E4A000AC1A0 /* ContentView_005.swift in Sources */,
 				2FE0D4522BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift in Sources */,
+				2FE0D47E2BE9AFE9000AC1A0 /* ContentView_007.swift in Sources */,
 				2FE0D4702BE22FA3000AC1A0 /* ViewWithTitle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
