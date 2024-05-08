@@ -10,31 +10,53 @@ import SwiftUI
 /// Alertを出し分ける
 struct ContentView_015: ViewWithTitle {
     let title: String = "015: Alertを出し分ける"
-    @State private var isPresentedAlert1 = false
-    @State private var isPresentedAlert2 = false
+    @State private var alertType: AlertType?
     var body: some View {
         VStack {
             Button("Pikachu") {
-                isPresentedAlert1 = true
-            }
-            .alert(isPresented: $isPresentedAlert1) {
-                Alert(
-                    title: Text("Title Pikachu"),
-                    message: Text("Message Pikachu")
-                )
+                alertType = .pikachu
             }
             Button("Snorlax") {
-                isPresentedAlert2 = true
+                alertType = .snorlax
             }
-            .alert(isPresented: $isPresentedAlert2) {
-                Alert(
-                    title: Text("Title Snorlax"),
-                    message: Text("Message Snorlax")
-                )
+            .alert(alertType?.title ?? "", isPresented: Binding<Bool>(
+                get: { alertType != nil },
+                set: { _ in alertType = nil }
+            )) {
+                Button("OK") {
+                    print("pressed ok")
+                }
+            } message: {
+                Text(alertType?.message ?? "")
             }
         }
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+extension ContentView_015 {
+    enum AlertType {
+        case pikachu, snorlax
+
+        var title: String {
+            switch self {
+            case .pikachu:
+                return "Title: Pikachu"
+            case .snorlax:
+                return "Title: Snorlax"
+            }
+
+        }
+
+        var message: String {
+            switch self {
+            case .pikachu:
+                return "Message: Pikachu"
+            case .snorlax:
+                return "Message: Snorlax"
+            }
+        }
     }
 }
 
