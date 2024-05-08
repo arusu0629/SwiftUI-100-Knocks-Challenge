@@ -15,11 +15,12 @@ struct ContentView_014: ViewWithTitle {
         Button("Show Alert") {
             isPresented = true
         }
-        .alert(isPresented: $isPresented) {
-            Alert(
-                title: Text("Title"),
-                message: Text("Message")
-            )
+        .alert("Title", isPresented: $isPresented) {
+            Button("OK") {
+                print("pressed ok")
+            }
+        } message: {
+            Text("message")
         }
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
