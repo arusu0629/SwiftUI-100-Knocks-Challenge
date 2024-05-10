@@ -11,10 +11,15 @@ import SwiftUI
 /// 数字が入力されたらシートを表示
 /// 数字以外が入力されたらアラートを表示
 struct ContentView_017: ViewWithTitle {
+    enum DisplayMode {
+        case none
+        case sheet
+        case alert
+    }
+
     let title: String = "017: アラートとシートを出し分ける"
     @State private var text = ""
-    @State private var isShowingSheet = false
-    @State private var isShowingAlert = false
+    @State private var displayMode: DisplayMode = .none
 
     var body: some View {
         VStack {
@@ -23,15 +28,21 @@ struct ContentView_017: ViewWithTitle {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             Button("Show Sheet") {
                 if let _ = Int(text) {
-                    isShowingSheet = true
+                    displayMode = .sheet
                 } else {
-                    isShowingAlert = true
+                    displayMode = .alert
                 }
             }
-            .sheet(isPresented: $isShowingSheet) {
+            .sheet(isPresented: Binding<Bool>(
+                get: { displayMode == .sheet },
+                set: { _ in displayMode = .none }
+            )) {
                 Text("Input number is \(text)")
             }
-            .alert("Alert", isPresented: $isShowingAlert) {
+            .alert("Alert", isPresented: Binding<Bool>(
+                get: { displayMode == .alert },
+                set: { _ in displayMode = .none }
+            )) {
                 Button("OK") {
                     print("pressed ok")
                 }
