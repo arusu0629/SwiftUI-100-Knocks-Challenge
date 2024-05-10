@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_100_Knocks_ChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
+            NavigationStack {
                 List(ContentViewData.testViewData, id: \.title) { data in
                     NavigationLink(destination: data.view) {
                         Text("\(data.title)")
