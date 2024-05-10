@@ -19,6 +19,7 @@
 		2FBFAA942BECF19500299F05 /* ContentView_017.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFAA932BECF19500299F05 /* ContentView_017.swift */; };
 		2FBFAA962BEDA14300299F05 /* ContentView_018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFAA952BEDA14300299F05 /* ContentView_018.swift */; };
 		2FBFAA982BEDA85000299F05 /* ContentView_019.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFAA972BEDA85000299F05 /* ContentView_019.swift */; };
+		2FBFAA9A2BEDAD5D00299F05 /* ContentView_020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFAA992BEDAD5D00299F05 /* ContentView_020.swift */; };
 		2FE0D4522BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */; };
 		2FE0D4562BE1F7FC000AC1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE0D4552BE1F7FC000AC1A0 /* Assets.xcassets */; };
 		2FE0D4592BE1F7FC000AC1A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE0D4582BE1F7FC000AC1A0 /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		2FBFAA932BECF19500299F05 /* ContentView_017.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_017.swift; sourceTree = "<group>"; };
 		2FBFAA952BEDA14300299F05 /* ContentView_018.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_018.swift; sourceTree = "<group>"; };
 		2FBFAA972BEDA85000299F05 /* ContentView_019.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_019.swift; sourceTree = "<group>"; };
+		2FBFAA992BEDAD5D00299F05 /* ContentView_020.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_020.swift; sourceTree = "<group>"; };
 		2FE0D44E2BE1F7FB000AC1A0 /* SwiftUI-100-Knocks-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-100-Knocks-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_100_Knocks_ChallengeApp.swift; sourceTree = "<group>"; };
 		2FE0D4552BE1F7FC000AC1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				2FBFAA932BECF19500299F05 /* ContentView_017.swift */,
 				2FBFAA952BEDA14300299F05 /* ContentView_018.swift */,
 				2FBFAA972BEDA85000299F05 /* ContentView_019.swift */,
+				2FBFAA992BEDAD5D00299F05 /* ContentView_020.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				2FE0D47A2BE32E4A000AC1A0 /* ContentView_005.swift in Sources */,
 				2FE0D4522BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift in Sources */,
 				2FBFAA822BE9B8FE00299F05 /* ContentView_009.swift in Sources */,
+				2FBFAA9A2BEDAD5D00299F05 /* ContentView_020.swift in Sources */,
 				2FE0D47E2BE9AFE9000AC1A0 /* ContentView_007.swift in Sources */,
 				2FE0D4702BE22FA3000AC1A0 /* ViewWithTitle.swift in Sources */,
 			);
