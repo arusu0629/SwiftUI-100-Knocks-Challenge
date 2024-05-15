@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0C23E12BF45CED0052EF35 /* ContentView_021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C23E02BF45CED0052EF35 /* ContentView_021.swift */; };
 		2FBFAA802BE9B6A200299F05 /* ContentView_008.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFAA7F2BE9B6A200299F05 /* ContentView_008.swift */; };
 		2FBFAA822BE9B8FE00299F05 /* ContentView_009.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFAA812BE9B8FE00299F05 /* ContentView_009.swift */; };
 		2FBFAA852BE9BA8600299F05 /* ContentView_010.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBFAA842BE9BA8600299F05 /* ContentView_010.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F0C23E02BF45CED0052EF35 /* ContentView_021.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_021.swift; sourceTree = "<group>"; };
 		2FBFAA7F2BE9B6A200299F05 /* ContentView_008.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_008.swift; sourceTree = "<group>"; };
 		2FBFAA812BE9B8FE00299F05 /* ContentView_009.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_009.swift; sourceTree = "<group>"; };
 		2FBFAA842BE9BA8600299F05 /* ContentView_010.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_010.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				2FBFAA952BEDA14300299F05 /* ContentView_018.swift */,
 				2FBFAA972BEDA85000299F05 /* ContentView_019.swift */,
 				2FBFAA992BEDAD5D00299F05 /* ContentView_020.swift */,
+				2F0C23E02BF45CED0052EF35 /* ContentView_021.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				2FBFAA802BE9B6A200299F05 /* ContentView_008.swift in Sources */,
 				2FBFAA982BEDA85000299F05 /* ContentView_019.swift in Sources */,
 				2FBFAA942BECF19500299F05 /* ContentView_017.swift in Sources */,
+				2F0C23E12BF45CED0052EF35 /* ContentView_021.swift in Sources */,
 				2FE0D4622BE1F878000AC1A0 /* ContentView_001.swift in Sources */,
 				2FE0D4672BE21EBE000AC1A0 /* ContentView_002.swift in Sources */,
 				2FE0D47C2BE3300E000AC1A0 /* ContentView_006.swift in Sources */,
