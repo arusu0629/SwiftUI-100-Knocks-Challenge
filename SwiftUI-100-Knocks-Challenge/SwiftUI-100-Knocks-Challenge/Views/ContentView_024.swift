@@ -16,10 +16,9 @@ struct ContentView_024: ViewWithTitle {
     var body: some View {
         List {
             ForEach(names, id: \.self) { name in
-                Text(name)
-                    .onTapGesture {
-                        tappedNames = name
-                    }
+                Button(name) {
+                    tappedNames = name
+                }
             }
         }
         .alert("Alert Title", isPresented: Binding<Bool>(
