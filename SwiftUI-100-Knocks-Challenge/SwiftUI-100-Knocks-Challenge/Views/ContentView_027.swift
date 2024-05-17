@@ -10,6 +10,8 @@ import SwiftUI
 /// 複数行の Picker を作成する
 struct ContentView_027: ViewWithTitle {
     let title: String = "027: 複数行の Picker を作成する"
+    let evenNumbers = (0..<60).filter { $0.isMultiple(of: 2) }
+    let oddNumbers  = (0..<60).filter { !$0.isMultiple(of: 2) }
     @State private var selectedEvenNumber = 0
     @State private var selectedOddNumber = 1
 
@@ -18,10 +20,8 @@ struct ContentView_027: ViewWithTitle {
             HStack {
                 VStack(spacing: 20) {
                     Picker(selection: $selectedEvenNumber, label: Text("even number picker")) {
-                        ForEach(0..<60) { index in
-                            if index.isMultiple(of: 2) {
-                                Text("\(index)").tag(index)
-                            }
+                        ForEach(evenNumbers, id: \.self) { index in
+                            Text("\(index)").tag(index)
                         }
                     }
                     .onReceive([selectedEvenNumber].publisher.first()) { (value) in
@@ -32,10 +32,8 @@ struct ContentView_027: ViewWithTitle {
                 }
                 VStack {
                     Picker(selection: $selectedOddNumber, label: Text("odd number picker")) {
-                        ForEach(0..<60) { index in
-                            if !index.isMultiple(of: 2) {
-                                Text("\(index)").tag(index)
-                            }
+                        ForEach(oddNumbers, id: \.self) { index in
+                            Text("\(index)").tag(index)
                         }
                     }
                     .onReceive([selectedOddNumber].publisher.first()) { (value) in
