@@ -10,11 +10,17 @@ import SwiftUI
 /// NavigationBar を隠す
 struct ContentView_030: ViewWithTitle {
     let title: String = "030: NavigationBar を隠す"
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
-        Text("No Navigation Bar")
-            .navigationTitle(title) // ※NavigationBar を非表示にしているのでタイトルは表示されない
-            .toolbar(.hidden)
+        VStack {
+            Text("No Navigation Bar")
+            Button("Dismiss") {
+                presentationMode.wrappedValue.dismiss()
+            }
+        }
+        .navigationTitle(title) // ※NavigationBar を非表示にしているのでタイトルは表示されない
+        .toolbar(.hidden)
     }
 }
 
