@@ -17,25 +17,22 @@ struct ContentView_034: ViewWithTitle {
     ]
 
     var body: some View {
-        ZStack {
-            Color.gray
-                .ignoresSafeArea(.all)
-            TabView {
-                ForEach(0..<images.count, id: \.self) { index in
-                    VStack {
-                        images[index]
-                            .resizable()
-                            .frame(width: 200, height: 200)
-                        Text("cat\(index + 1)")
-                            .foregroundStyle(.white)
-                            .font(.title)
-                    }
+        TabView {
+            ForEach(0..<images.count, id: \.self) { index in
+                VStack {
+                    images[index]
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                    Text("cat\(index + 1)")
+                        .foregroundStyle(.white)
+                        .font(.title)
                 }
             }
-            .tabViewStyle(PageTabViewStyle())
-            .navigationTitle(title)
-            .navigationBarTitleDisplayMode(.inline)
         }
+        .background(.gray)
+        .tabViewStyle(.page)
+        .navigationTitle(title)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
