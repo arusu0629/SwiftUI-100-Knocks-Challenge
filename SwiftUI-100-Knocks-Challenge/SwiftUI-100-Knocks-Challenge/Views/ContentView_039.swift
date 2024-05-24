@@ -16,13 +16,9 @@ struct ContentView_039: ViewWithTitle {
 """
 
     var body: some View {
-        VStack {
-            if let str = try? AttributedString(markdown: markdownText, options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)) {
-                Text(str)
-            }
-        }
-        .navigationTitle(title)
-        .navigationBarTitleDisplayMode(.inline)
+        Text(LocalizedStringKey(markdownText))
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 
