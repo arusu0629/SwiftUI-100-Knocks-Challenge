@@ -16,29 +16,10 @@ struct ContentView_040: ViewWithTitle {
 """
 
     var body: some View {
-        VStack {
-            if let attributedString = try? AttributedString(
-                markdown: markdownText,
-                options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)
-            ) {
-                Text(makeAttributedStringWithRedLinks(from: attributedString))
-            }
-            else {
-                Text("Failed to load markdown")
-            }
-        }
-        .navigationTitle(title)
-        .navigationBarTitleDisplayMode(.inline)
-    }
-
-    private func makeAttributedStringWithRedLinks(from attributedString: AttributedString) -> AttributedString {
-        var modifiedAttributedString = attributedString
-        for run in attributedString.runs {
-            if run.link != nil {
-                modifiedAttributedString[run.range].foregroundColor = .red
-            }
-        }
-        return modifiedAttributedString
+        Text(LocalizedStringKey(markdownText))
+            .tint(.red)
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 
