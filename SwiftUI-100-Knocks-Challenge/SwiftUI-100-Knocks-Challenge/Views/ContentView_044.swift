@@ -17,7 +17,7 @@ struct ContentView_044: ViewWithTitle {
         VStack {
             Text(isEditing ? "On Editing" : "Not On Editing")
             TextField("Placeholder", text: $inputText)                .focused($isEditing)
-                .border(.secondary)
+                .textFieldStyle(.roundedBorder)
         }
         .padding()
         .navigationTitle(title)
