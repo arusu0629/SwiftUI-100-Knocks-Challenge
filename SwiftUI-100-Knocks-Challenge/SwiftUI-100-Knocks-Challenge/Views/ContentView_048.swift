@@ -1,5 +1,5 @@
 //
-//  ContentView_046.swift
+//  ContentView_048.swift
 //  SwiftUI-100-Knocks-Challenge
 //
 //  Created by af_nakandakari_toru on 2024/05/31.
@@ -24,7 +24,7 @@ struct ContentView_048: ViewWithTitle {
                 EditButton()
             }
 
-            NavigationLink(destination: ContentView_048_AddTodoView(todos: $todos)) {
+            NavigationLink(destination: ContentView_048_AddTodoView(delegate: self)) {
                 Text("Add")
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
@@ -43,9 +43,9 @@ struct ContentView_048: ViewWithTitle {
     }
 
     struct ContentView_048_AddTodoView: View {
-        @Binding var todos: [String]
         @State private var inputText = ""
         @Environment(\.dismiss) var dismiss
+        let delegate: AddTodoDelegate
 
         var body: some View {
             VStack(spacing: 20) {
@@ -53,11 +53,22 @@ struct ContentView_048: ViewWithTitle {
                     .textFieldStyle(.roundedBorder)
                     .padding()
                 Button("Add") {
-                    todos.append(inputText)
+                    delegate.execute(text: inputText)
                     dismiss()
                 }
             }
         }
+    }
+}
+
+protocol AddTodoDelegate {
+    func execute(text: String)
+}
+
+extension ContentView_048: AddTodoDelegate {
+
+    func execute(text: String) {
+        todos.append(text)
     }
 }
 
