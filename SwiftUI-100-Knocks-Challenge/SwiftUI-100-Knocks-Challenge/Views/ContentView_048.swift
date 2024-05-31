@@ -11,45 +11,31 @@ import SwiftUI
 struct ContentView_048: ViewWithTitle {
     let title: String = "048: 簡易 TODO アプリを作成する"
     @State private var todos = ["Study", "Work", "Buy"]
-    @State private var isAdding = false
 
     var body: some View {
-        VStack {
+        ZStack(alignment: .bottomTrailing) {
             List {
                 ForEach(todos, id: \.self) { todo in
                     Text(todo)
                 }
                 .onDelete(perform: delete)
             }
-            Spacer()
-        }
-        .overlay(
-            VStack {
-                Spacer()
-                HStack {
-                    Spacer()
-                    Button("Add") {
-                        isAdding = true
-                    }
+            .toolbar {
+                EditButton()
+            }
+
+            NavigationLink(destination: ContentView_048_AddTodoView(todos: $todos)) {
+                Text("Add")
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
-                    .frame(width: 80, height: 80)
-                    .background(.orange)
-                    .clipShape(Circle())
-                    .padding()
-                }
-                .padding()
             }
-        )
-        .ignoresSafeArea(edges: .bottom)
-        .toolbar {
-            EditButton()
+            .frame(width: 80, height: 80)
+            .background(.orange)
+            .clipShape(Circle())
+            .padding()
         }
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
-        .navigationDestination(isPresented: $isAdding) {
-            ContentView_048_AddTodoView(todos: $todos)
-        }
     }
 
     func delete(at offsets: IndexSet) {
