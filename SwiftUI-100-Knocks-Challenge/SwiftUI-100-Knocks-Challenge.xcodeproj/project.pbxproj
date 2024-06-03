@@ -58,6 +58,8 @@
 		2FE0D47A2BE32E4A000AC1A0 /* ContentView_005.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4792BE32E4A000AC1A0 /* ContentView_005.swift */; };
 		2FE0D47C2BE3300E000AC1A0 /* ContentView_006.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D47B2BE3300E000AC1A0 /* ContentView_006.swift */; };
 		2FE0D47E2BE9AFE9000AC1A0 /* ContentView_007.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D47D2BE9AFE9000AC1A0 /* ContentView_007.swift */; };
+		2FF655C02C0DAD1F00B02015 /* ContentView_049.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF655BF2C0DAD1F00B02015 /* ContentView_049.swift */; };
+		2FF655C42C0DAEF400B02015 /* melody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FF655C32C0DAEF400B02015 /* melody.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +115,8 @@
 		2FE0D4792BE32E4A000AC1A0 /* ContentView_005.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_005.swift; sourceTree = "<group>"; };
 		2FE0D47B2BE3300E000AC1A0 /* ContentView_006.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_006.swift; sourceTree = "<group>"; };
 		2FE0D47D2BE9AFE9000AC1A0 /* ContentView_007.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_007.swift; sourceTree = "<group>"; };
+		2FF655BF2C0DAD1F00B02015 /* ContentView_049.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_049.swift; sourceTree = "<group>"; };
+		2FF655C32C0DAEF400B02015 /* melody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melody.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 		2FE0D4502BE1F7FB000AC1A0 /* SwiftUI-100-Knocks-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				2FF655C12C0DAED700B02015 /* Resources */,
 				2FE0D45F2BE1F864000AC1A0 /* Views */,
 				2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */,
 				2FE0D4552BE1F7FC000AC1A0 /* Assets.xcassets */,
@@ -212,6 +217,7 @@
 				2F8F88952C08667700A3DF90 /* ContentView_045.swift */,
 				2FD9D1402C095ADC009AD76F /* ContentView_046.swift */,
 				2FD9D1422C095EEC009AD76F /* ContentView_048.swift */,
+				2FF655BF2C0DAD1F00B02015 /* ContentView_049.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +228,22 @@
 				2FE0D46F2BE22FA3000AC1A0 /* ViewWithTitle.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		2FF655C12C0DAED700B02015 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FF655C22C0DAEE500B02015 /* Media */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2FF655C22C0DAEE500B02015 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				2FF655C32C0DAEF400B02015 /* melody.mp3 */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF655C42C0DAEF400B02015 /* melody.mp3 in Resources */,
 				2FE0D4592BE1F7FC000AC1A0 /* Preview Assets.xcassets in Resources */,
 				2FE0D4562BE1F7FC000AC1A0 /* Assets.xcassets in Resources */,
 			);
@@ -298,6 +321,7 @@
 				2FE0D46A2BE21FDF000AC1A0 /* ContentView_003.swift in Sources */,
 				2F0C23E32BF4621F0052EF35 /* ContentView_022.swift in Sources */,
 				2FBFAA802BE9B6A200299F05 /* ContentView_008.swift in Sources */,
+				2FF655C02C0DAD1F00B02015 /* ContentView_049.swift in Sources */,
 				2F8F888C2C05EE1A00A3DF90 /* ContentView_041.swift in Sources */,
 				2F91A56F2BF465F300E5B7D3 /* ContentView_023.swift in Sources */,
 				2FBFAA982BEDA85000299F05 /* ContentView_019.swift in Sources */,
