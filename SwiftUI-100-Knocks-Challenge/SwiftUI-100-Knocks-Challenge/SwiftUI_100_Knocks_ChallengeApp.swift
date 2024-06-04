@@ -9,17 +9,31 @@ import SwiftUI
 
 @main
 struct SwiftUI_100_Knocks_ChallengeApp: App {
+    @AppStorage("isSortedAscending") private var isSortedAscending = true
+    @State private var viewData = ContentViewData.testViewData
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                List(ContentViewData.testViewData, id: \.title) { data in
+                List(viewData, id: \.title) { data in
                     NavigationLink(destination: data.view) {
                         Text("\(data.title)")
                     }
                 }
                 .navigationTitle("SwiftUI100本ノック!!!")
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        SortButton(isSortedAscending: $isSortedAscending) {
+                            sortViewData()
+                        }
+                    }
+                }
+                .onAppear(perform: sortViewData)
             }
         }
+    }
+
+    private func sortViewData() {
+        viewData.sort { isSortedAscending ? $0.title < $1.title : $0.title > $1.title }
     }
 }
 

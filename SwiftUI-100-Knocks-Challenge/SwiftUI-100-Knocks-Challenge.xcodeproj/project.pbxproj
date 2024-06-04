@@ -61,6 +61,7 @@
 		2FF655C02C0DAD1F00B02015 /* ContentView_049.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF655BF2C0DAD1F00B02015 /* ContentView_049.swift */; };
 		2FF655C42C0DAEF400B02015 /* melody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FF655C32C0DAEF400B02015 /* melody.mp3 */; };
 		2FF655C62C0EAA1800B02015 /* ContentView_050.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF655C52C0EAA1800B02015 /* ContentView_050.swift */; };
+		2FF655C92C0EB55800B02015 /* SortButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF655C82C0EB55800B02015 /* SortButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,7 @@
 		2FF655BF2C0DAD1F00B02015 /* ContentView_049.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_049.swift; sourceTree = "<group>"; };
 		2FF655C32C0DAEF400B02015 /* melody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melody.mp3; sourceTree = "<group>"; };
 		2FF655C52C0EAA1800B02015 /* ContentView_050.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_050.swift; sourceTree = "<group>"; };
+		2FF655C82C0EB55800B02015 /* SortButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		2FE0D45F2BE1F864000AC1A0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2FF655C72C0EB54200B02015 /* Utilities */,
 				2FE0D46E2BE22F98000AC1A0 /* Protocol */,
 				2FE0D4612BE1F878000AC1A0 /* ContentView_001.swift */,
 				2FE0D4662BE21EBE000AC1A0 /* ContentView_002.swift */,
@@ -247,6 +250,14 @@
 				2FF655C32C0DAEF400B02015 /* melody.mp3 */,
 			);
 			path = Media;
+			sourceTree = "<group>";
+		};
+		2FF655C72C0EB54200B02015 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2FF655C82C0EB55800B02015 /* SortButton.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +354,7 @@
 				2FBFAA922BECA6C100299F05 /* ContentView_016.swift in Sources */,
 				2F91A5732BF5E02700E5B7D3 /* ContentView_025.swift in Sources */,
 				2FF655C62C0EAA1800B02015 /* ContentView_050.swift in Sources */,
+				2FF655C92C0EB55800B02015 /* SortButton.swift in Sources */,
 				2F91A5832BFC418B00E5B7D3 /* ContentView_031.swift in Sources */,
 				2F91A5772BF759AC00E5B7D3 /* ContentView_026.swift in Sources */,
 				2F91A5872BFC95B500E5B7D3 /* ContentView_033.swift in Sources */,
