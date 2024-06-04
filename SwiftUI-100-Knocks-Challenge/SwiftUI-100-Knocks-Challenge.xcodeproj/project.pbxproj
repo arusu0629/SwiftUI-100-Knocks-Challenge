@@ -60,6 +60,7 @@
 		2FE0D47E2BE9AFE9000AC1A0 /* ContentView_007.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D47D2BE9AFE9000AC1A0 /* ContentView_007.swift */; };
 		2FF655C02C0DAD1F00B02015 /* ContentView_049.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF655BF2C0DAD1F00B02015 /* ContentView_049.swift */; };
 		2FF655C42C0DAEF400B02015 /* melody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2FF655C32C0DAEF400B02015 /* melody.mp3 */; };
+		2FF655C62C0EAA1800B02015 /* ContentView_050.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF655C52C0EAA1800B02015 /* ContentView_050.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +118,7 @@
 		2FE0D47D2BE9AFE9000AC1A0 /* ContentView_007.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_007.swift; sourceTree = "<group>"; };
 		2FF655BF2C0DAD1F00B02015 /* ContentView_049.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_049.swift; sourceTree = "<group>"; };
 		2FF655C32C0DAEF400B02015 /* melody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = melody.mp3; sourceTree = "<group>"; };
+		2FF655C52C0EAA1800B02015 /* ContentView_050.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_050.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				2FD9D1402C095ADC009AD76F /* ContentView_046.swift */,
 				2FD9D1422C095EEC009AD76F /* ContentView_048.swift */,
 				2FF655BF2C0DAD1F00B02015 /* ContentView_049.swift */,
+				2FF655C52C0EAA1800B02015 /* ContentView_050.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				2FBFAA872BEB208000299F05 /* ContentView_011.swift in Sources */,
 				2FBFAA922BECA6C100299F05 /* ContentView_016.swift in Sources */,
 				2F91A5732BF5E02700E5B7D3 /* ContentView_025.swift in Sources */,
+				2FF655C62C0EAA1800B02015 /* ContentView_050.swift in Sources */,
 				2F91A5832BFC418B00E5B7D3 /* ContentView_031.swift in Sources */,
 				2F91A5772BF759AC00E5B7D3 /* ContentView_026.swift in Sources */,
 				2F91A5872BFC95B500E5B7D3 /* ContentView_033.swift in Sources */,
