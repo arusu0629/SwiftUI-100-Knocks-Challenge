@@ -21,9 +21,14 @@ struct SwiftUI_100_Knocks_ChallengeApp: App {
                 }
                 .navigationTitle("SwiftUI100本ノック!!!")
                 .toolbar {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        SortButton(isSortedAscending: $isSortedAscending) {
-                            sortViewData()
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        HStack(spacing: 0) {
+                            Text("Archived! \(viewData.count)")
+                                .foregroundColor(.primary)
+                                .font(Font.system(size: 12))
+                            SortButton(isSortedAscending: $isSortedAscending) {
+                                sortViewData()
+                            }
                         }
                     }
                 }
