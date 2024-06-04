@@ -2,4 +2,4 @@
 SwiftUI 100 Knocks Challenge (https://github.com/takoikatakotako/100knocks-SwiftUI)
 
 # Demo
-![Simulator Screen Recording - iPhone 15 Pro - 2024-05-10 at 10 33 48 mp4-3007FAAB-0F61-4DA9-B583-E019EE7EF4CE](https://github.com/arusu0629/SwiftUI-100-Knocks-Challenge/assets/5705360/207da432-5ad1-483b-a5ef-c33b471a12cb)
+![Simulator Screen Recording - iPhone 15 Pro - 2024-06-04 at 12 26 45 mp4-4D01B212-A430-4828-AF31-A6F544AAEB76](https://github.com/arusu0629/SwiftUI-100-Knocks-Challenge/assets/5705360/54a2a1f1-3e6c-4264-98a8-8531184e0460)
