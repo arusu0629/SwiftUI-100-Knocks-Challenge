@@ -16,12 +16,9 @@ struct ContentView_054: ViewWithTitle {
     var body: some View {
         ZStack {
             VStack {
-                HStack {
+                Toggle(isOn: $isEnabledButton) {
                     Text("isEnabled: \(isEnabledButton.description)")
-                    Spacer()
-                    Toggle("", isOn: $isEnabledButton)
                 }
-                .padding()
                 Button(action: {
                     isShowingPopup = true
                 }, label: {
@@ -34,6 +31,7 @@ struct ContentView_054: ViewWithTitle {
                 })
                 .disabled(!isEnabledButton)
             }
+            .padding()
 
             if isShowingPopup {
                 ContentView_054_PopupView(isShowingPopup: $isShowingPopup)
