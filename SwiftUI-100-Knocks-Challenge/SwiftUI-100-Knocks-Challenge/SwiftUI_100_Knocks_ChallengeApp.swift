@@ -112,5 +112,6 @@ extension ContentViewData {
         ContentViewData(ContentView_055()),
         ContentViewData(ContentView_056()),
         ContentViewData(ContentView_057()),
+        ContentViewData(ContentView_058()),
     ]
 }
