@@ -57,6 +57,7 @@
 		2FD6A1DD2C19887000E82E6B /* ContentView_059.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6A1DC2C19887000E82E6B /* ContentView_059.swift */; };
 		2FD6A1E12C198EC600E82E6B /* ContentView_060.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6A1E02C198EC600E82E6B /* ContentView_060.swift */; };
 		2FD6A1E32C1A845200E82E6B /* ContentView_062.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6A1E22C1A845200E82E6B /* ContentView_062.swift */; };
+		2FD6A1E52C1AC13200E82E6B /* ContentView_063.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6A1E42C1AC13200E82E6B /* ContentView_063.swift */; };
 		2FD9D1412C095ADC009AD76F /* ContentView_046.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9D1402C095ADC009AD76F /* ContentView_046.swift */; };
 		2FD9D1432C095EEC009AD76F /* ContentView_048.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9D1422C095EEC009AD76F /* ContentView_048.swift */; };
 		2FE0D4522BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */; };
@@ -127,6 +128,8 @@
 		2FD6A1DC2C19887000E82E6B /* ContentView_059.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_059.swift; sourceTree = "<group>"; };
 		2FD6A1E02C198EC600E82E6B /* ContentView_060.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_060.swift; sourceTree = "<group>"; };
 		2FD6A1E22C1A845200E82E6B /* ContentView_062.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_062.swift; sourceTree = "<group>"; };
+		2FD6A1E42C1AC13200E82E6B /* ContentView_063.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_063.swift; sourceTree = "<group>"; };
+		2FD6A1E62C1AC1AC00E82E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2FD9D1402C095ADC009AD76F /* ContentView_046.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_046.swift; sourceTree = "<group>"; };
 		2FD9D1422C095EEC009AD76F /* ContentView_048.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_048.swift; sourceTree = "<group>"; };
 		2FE0D44E2BE1F7FB000AC1A0 /* SwiftUI-100-Knocks-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-100-Knocks-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,6 +188,7 @@
 		2FE0D4502BE1F7FB000AC1A0 /* SwiftUI-100-Knocks-Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				2FD6A1E62C1AC1AC00E82E6B /* Info.plist */,
 				2F01CDEA2C107DF900CA4137 /* Extension */,
 				2FF655C12C0DAED700B02015 /* Resources */,
 				2FE0D45F2BE1F864000AC1A0 /* Views */,
@@ -268,6 +272,7 @@
 				2FD6A1DC2C19887000E82E6B /* ContentView_059.swift */,
 				2FD6A1E02C198EC600E82E6B /* ContentView_060.swift */,
 				2FD6A1E22C1A845200E82E6B /* ContentView_062.swift */,
+				2FD6A1E42C1AC13200E82E6B /* ContentView_063.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -436,6 +441,7 @@
 				2F91A57D2BFB19F600E5B7D3 /* ContentView_028.swift in Sources */,
 				2FBFAA9A2BEDAD5D00299F05 /* ContentView_020.swift in Sources */,
 				2FE0D47E2BE9AFE9000AC1A0 /* ContentView_007.swift in Sources */,
+				2FD6A1E52C1AC13200E82E6B /* ContentView_063.swift in Sources */,
 				2FE0D4702BE22FA3000AC1A0 /* ViewWithTitle.swift in Sources */,
 				2F91A5712BF4B84A00E5B7D3 /* ContentView_024.swift in Sources */,
 				2FD9D1412C095ADC009AD76F /* ContentView_046.swift in Sources */,
@@ -572,8 +578,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-100-Knocks-Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 92J5HSCNXQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-100-Knocks-Challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -600,8 +608,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-100-Knocks-Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = 92J5HSCNXQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-100-Knocks-Challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

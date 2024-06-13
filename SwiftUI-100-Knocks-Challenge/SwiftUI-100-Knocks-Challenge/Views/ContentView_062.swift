@@ -2,7 +2,7 @@
 //  ContentView_062.swift
 //  SwiftUI-100-Knocks-Challenge
 //
-//  Created by af_nakandakari_toru on 2024/06/12.
+//  Created by af_nakandakari_toru on 2024/06/13.
 //
 
 import SwiftUI
