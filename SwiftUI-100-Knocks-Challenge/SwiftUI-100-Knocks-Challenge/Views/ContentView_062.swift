@@ -11,14 +11,11 @@ import MapKit
 /// Map を表示する
 struct ContentView_062: ViewWithTitle {
     let title: String = "062: Map を表示する"
-    let coordinate = CLLocationCoordinate2D(latitude: 35.7005, longitude: 139.7726)
-    let mapCameraBounds = MapCameraBounds(minimumDistance: 1000)
+    let region = MKCoordinateRegion(center: .init(latitude: 35.7005, longitude: 139.7726), latitudinalMeters: 300, longitudinalMeters: 300)
 
     var body: some View {
         VStack {
-            Map(bounds: mapCameraBounds) {
-                Marker("秋葉原UDX", coordinate: coordinate)
-            }
+            Map(initialPosition: .region(region))
         }
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
@@ -26,6 +23,7 @@ struct ContentView_062: ViewWithTitle {
 }
 
 /*
+ 解答例
  struct ContentView: View {
      var body: some View {
          Map(
