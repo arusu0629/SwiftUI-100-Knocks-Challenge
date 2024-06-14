@@ -26,6 +26,7 @@ struct ContentView_063: ViewWithTitle {
                         )
                     )
                 ) {
+                    // 自分の位置を赤丸でマークする
                     MapCircle(center: location, radius: CLLocationDistance(10))
                         .foregroundStyle(.red.opacity(0.6))
                         .mapOverlayLevel(level: .aboveRoads)
