@@ -11,7 +11,7 @@ import SwiftUI
 
 /// Map を表示し、自分の位置を中心にする
 struct ContentView_063: ViewWithTitle {
-    let title: String = "063: Map を表示し、自分の位置を中心にする"
+    let title: String = "063: Map を表示し、自分の位置を中心に赤丸を表示する"
     @StateObject private var locationManager = LocationManager()
 
     var body: some View {
