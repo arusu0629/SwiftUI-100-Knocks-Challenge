@@ -10,25 +10,29 @@ import SwiftUI
 /// ObservableObject の @Published なプロパティと Binding する
 struct ContentView_079: ViewWithTitle {
     let title: String = "079: ObservableObject の @Published なプロパティと Binding する"
-    @StateObject private var viewModel = CountViewModel()
+    @State private var count = 0
     @State private var isShowingSheet = false
 
     var body: some View {
         VStack {
-            Text("Count: \(viewModel.count)")
+            Text("Count: \(count)")
             Button("Show Sheet") {
                 isShowingSheet = true
             }
         }
         .sheet(isPresented: $isShowingSheet) {
-            ContentView_079_AddItemView(viewModel: viewModel)
+            ContentView_079_AddItemView(count: $count)
         }
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
     }
 
     struct ContentView_079_AddItemView: View {
-        @ObservedObject var viewModel: CountViewModel
+        @StateObject var viewModel: CountViewModel
+
+        init(count: Binding<Int>) {
+            self._viewModel = StateObject(wrappedValue: CountViewModel(count: count))
+        }
 
         var body: some View {
             VStack {
@@ -41,7 +45,17 @@ struct ContentView_079: ViewWithTitle {
     }
 
     final class CountViewModel: ObservableObject {
-        @Published private(set) var count = 0
+        @Binding var bindingCount: Int
+        @Published private(set) var count: Int {
+            didSet {
+                bindingCount = count
+            }
+        }
+
+        init(count: Binding<Int>) {
+            self.count = count.wrappedValue
+            self._bindingCount = count
+        }
 
         func increment() {
             count += 1
