@@ -28,7 +28,7 @@ struct ContentView_079: ViewWithTitle {
     }
 
     struct ContentView_079_AddItemView: View {
-        @StateObject var viewModel: CountViewModel
+        @ObservedObject var viewModel: CountViewModel
 
         var body: some View {
             VStack {
