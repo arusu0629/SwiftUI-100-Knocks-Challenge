@@ -62,6 +62,7 @@
 		2FD6A1EC2C1BFFCE00E82E6B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6A1EB2C1BFFCE00E82E6B /* LocationManager.swift */; };
 		2FD6A1F02C1C016A00E82E6B /* ContentView_078.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6A1EF2C1C016A00E82E6B /* ContentView_078.swift */; };
 		2FD6A1F22C211E2000E82E6B /* ContentView_079.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6A1F12C211E2000E82E6B /* ContentView_079.swift */; };
+		2FD6A1F42C227C9D00E82E6B /* ContentView_080.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6A1F32C227C9D00E82E6B /* ContentView_080.swift */; };
 		2FD9D1412C095ADC009AD76F /* ContentView_046.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9D1402C095ADC009AD76F /* ContentView_046.swift */; };
 		2FD9D1432C095EEC009AD76F /* ContentView_048.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9D1422C095EEC009AD76F /* ContentView_048.swift */; };
 		2FE0D4522BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE0D4512BE1F7FB000AC1A0 /* SwiftUI_100_Knocks_ChallengeApp.swift */; };
@@ -138,6 +139,7 @@
 		2FD6A1EB2C1BFFCE00E82E6B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2FD6A1EF2C1C016A00E82E6B /* ContentView_078.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_078.swift; sourceTree = "<group>"; };
 		2FD6A1F12C211E2000E82E6B /* ContentView_079.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_079.swift; sourceTree = "<group>"; };
+		2FD6A1F32C227C9D00E82E6B /* ContentView_080.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_080.swift; sourceTree = "<group>"; };
 		2FD9D1402C095ADC009AD76F /* ContentView_046.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_046.swift; sourceTree = "<group>"; };
 		2FD9D1422C095EEC009AD76F /* ContentView_048.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_048.swift; sourceTree = "<group>"; };
 		2FE0D44E2BE1F7FB000AC1A0 /* SwiftUI-100-Knocks-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-100-Knocks-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -301,6 +303,7 @@
 				2FD6A1E72C1BECA700E82E6B /* ContentView_065.swift */,
 				2FD6A1EF2C1C016A00E82E6B /* ContentView_078.swift */,
 				2FD6A1F12C211E2000E82E6B /* ContentView_079.swift */,
+				2FD6A1F32C227C9D00E82E6B /* ContentView_080.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				2FBFAA942BECF19500299F05 /* ContentView_017.swift in Sources */,
 				2F8F888A2C05EA2800A3DF90 /* ContentView_040.swift in Sources */,
 				2FD6A1D72C170B8300E82E6B /* ContentView_056.swift in Sources */,
+				2FD6A1F42C227C9D00E82E6B /* ContentView_080.swift in Sources */,
 				2F0C23E12BF45CED0052EF35 /* ContentView_021.swift in Sources */,
 				2FE0D4622BE1F878000AC1A0 /* ContentView_001.swift in Sources */,
 				2F6F5A052C003F34001049B3 /* ContentView_039.swift in Sources */,
