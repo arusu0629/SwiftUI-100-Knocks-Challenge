@@ -24,16 +24,26 @@ struct ContentView_091: ViewWithTitle {
         func makeUIView(context: Context) -> some UIView {
             let pdfView = PDFView()
             pdfView.autoScales = true
-            pdfView.document = PDFDocument()
-            guard let page = PDFPage(image: image) else {
-                return pdfView
+            if let pdfDocument = createPDFDocument(from: image){
+                pdfView.document = pdfDocument
             }
-            pdfView.document?.insert(page, at: 0)
             return pdfView
         }
 
         // NOP
         func updateUIView(_ uiView: UIViewType, context: Context) {}
+
+        func createPDFDocument(from image: UIImage) -> PDFDocument? {
+            let pdfPageRect = CGRect(origin: .zero, size: image.size)
+            let renderer = UIGraphicsPDFRenderer(bounds: pdfPageRect)
+
+            let data = renderer.pdfData { context in
+                context.beginPage()
+                image.draw(in: pdfPageRect)
+            }
+
+            return PDFDocument(data: data)
+        }
     }
 }
 
