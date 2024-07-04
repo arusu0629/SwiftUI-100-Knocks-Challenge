@@ -23,7 +23,7 @@ struct ContentView_090: ViewWithTitle {
                     MagnificationGesture()
                         .onChanged { value in
                             currentScale = lastScale * value
-                        }
+                        } 
                         .onEnded { value in
                             lastScale = currentScale
                         }
