@@ -21,75 +21,45 @@ struct ContentView_092: ViewWithTitle {
         let image: UIImage
 
         func makeUIView(context: Context) -> some UIView {
-            let scrollView = UIScrollView()
-            scrollView.delegate = context.coordinator
+            let view = ContentView_092_UIImageView(image: image)
+            return view
+        }
+
+        func updateUIView(_ uiView: UIViewType, context: Context) {}
+    }
+
+    public class ContentView_092_UIImageView: UIView, UIScrollViewDelegate {
+        private let image: UIImage
+        private let scrollView = UIScrollView()
+        private let imageView = UIImageView()
+
+        required init(image: UIImage) {
+            self.image = image
+            super.init(frame: .zero)
+
+            scrollView.delegate = self
             scrollView.minimumZoomScale = 1.0
             scrollView.maximumZoomScale = 6.0
 
-            let imageView = UIImageView(image: image)
+            addSubview(scrollView)
+
+            imageView.image = image
             imageView.contentMode = .scaleAspectFit
-            imageView.frame = .init(origin: .zero, size: image.size)
-
             scrollView.addSubview(imageView)
-            scrollView.contentSize = image.size
-
-            context.coordinator.imageView = imageView
-            context.coordinator.scrollView = scrollView
-
-            DispatchQueue.main.async {
-                context.coordinator.updateZoomScale()
-                context.coordinator.centerImage()
-            }
-
-            return scrollView
         }
 
-        // NOP
-        func updateUIView(_ uiView: UIViewType, context: Context) {}
-
-        func makeCoordinator() -> Coordinator {
-            Coordinator(self)
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
         }
 
-        class Coordinator: NSObject, UIScrollViewDelegate {
-            var parent: ContentView_092_ImageViewWrapper
-            var imageView: UIImageView?
-            var scrollView: UIScrollView?
+        public override func layoutSubviews() {
+            super.layoutSubviews()
+            scrollView.frame = bounds
+            imageView.frame = scrollView.frame
+        }
 
-            init(_ parent: ContentView_092_ImageViewWrapper) {
-                self.parent = parent
-            }
-
-            func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-                return imageView
-            }
-
-            func updateZoomScale() {
-                guard let scrollView = scrollView, 
-                        let imageView = imageView else {
-                    return
-                }
-
-                let widthScale = scrollView.bounds.width / imageView.bounds.width
-                let heightScale = scrollView.bounds.height / imageView.bounds.height
-                let minScale = min(widthScale, heightScale)
-
-                scrollView.minimumZoomScale = minScale
-                scrollView.zoomScale = minScale
-            }
-
-            func centerImage() {
-                guard let scrollView = scrollView,
-                      let imageView = imageView else {
-                    return
-                }
-                let scrollViewSize = scrollView.bounds.size
-                let imageSize = imageView.frame.size
-                let horizontalPadding = max(0, (scrollViewSize.width - imageSize.width) / 2)
-                let verticalPadding = max(0, (scrollViewSize.height - imageSize.height) / 2)
-
-                scrollView.contentInset = UIEdgeInsets(top: verticalPadding, left: horizontalPadding, bottom: verticalPadding, right: horizontalPadding)
-            }
+        public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+            return imageView
         }
     }
 }
