@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F004B2F2C576D8A0079CC95 /* ContentView_094.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F004B2E2C576D8A0079CC95 /* ContentView_094.swift */; };
+		2F004B312C577CAD0079CC95 /* ContentView_095.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F004B302C577CAD0079CC95 /* ContentView_095.swift */; };
 		2F01CDE82C1072A900CA4137 /* ContentView_051.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F01CDE72C1072A900CA4137 /* ContentView_051.swift */; };
 		2F01CDEC2C107E0500CA4137 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F01CDEB2C107E0500CA4137 /* Double+.swift */; };
 		2F0C23E12BF45CED0052EF35 /* ContentView_021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0C23E02BF45CED0052EF35 /* ContentView_021.swift */; };
@@ -91,6 +92,7 @@
 
 /* Begin PBXFileReference section */
 		2F004B2E2C576D8A0079CC95 /* ContentView_094.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_094.swift; sourceTree = "<group>"; };
+		2F004B302C577CAD0079CC95 /* ContentView_095.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_095.swift; sourceTree = "<group>"; };
 		2F01CDE72C1072A900CA4137 /* ContentView_051.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_051.swift; sourceTree = "<group>"; };
 		2F01CDEB2C107E0500CA4137 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		2F0C23E02BF45CED0052EF35 /* ContentView_021.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView_021.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				2F3538362C377C7E007CCC78 /* ContentView_092.swift */,
 				2F29D8C32C3FD01300F39A45 /* ContentView_093.swift */,
 				2F004B2E2C576D8A0079CC95 /* ContentView_094.swift */,
+				2F004B302C577CAD0079CC95 /* ContentView_095.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				2F252A612C12A31F00B240BE /* ContentView_054.swift in Sources */,
 				2FBFAA852BE9BA8600299F05 /* ContentView_010.swift in Sources */,
 				2FBFAA8B2BEB241600299F05 /* ContentView_013.swift in Sources */,
+				2F004B312C577CAD0079CC95 /* ContentView_095.swift in Sources */,
 				2F3538312C2BA42B007CCC78 /* ContentView_081.swift in Sources */,
 				2FD6A1EC2C1BFFCE00E82E6B /* LocationManager.swift in Sources */,
 				2F252A5F2C129AFA00B240BE /* ContentView_053.swift in Sources */,
