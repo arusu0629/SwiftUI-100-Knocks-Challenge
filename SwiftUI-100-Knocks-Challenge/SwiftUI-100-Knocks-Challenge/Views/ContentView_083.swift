@@ -16,16 +16,13 @@ struct ContentView_083: ViewWithTitle {
         VStack {
             Spacer()
             if shouldShowIndicator {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 70, height: 70)
-                        .foregroundColor(.gray)
-                    ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle())
-                        .padding()
-                        .tint(.white) // プログレスビューを白色に設定
-                        .scaleEffect(1.5) // インジケーターを大きくする
-                }
+                ProgressView()
+                    .progressViewStyle(.circular)
+                    .padding(12)
+                    .background(.gray)
+                    .tint(.white) // プログレスビューを白色に設定
+                    .clipShape(RoundedRectangle(cornerRadius: 8)) // 角丸にする
+                    .scaleEffect(1.5) // インジケーターを大きくする
             }
             Spacer()
             Button(action: {
